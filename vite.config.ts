@@ -15,9 +15,9 @@ export default defineConfig({
         lib: {
             // Could also be a dictionary or array of multiple entry points
             entry: resolve(__dirname, 'src', 'index.ts'),
-            name: '@netglade/vite-shadow-dom',
+            name: '@netglade/vite-plugin-root-redirect',
             // the proper extensions will be added
-            fileName: (format) => `vite-shadow-dom.${format}.js`,
+            fileName: (format) => `vite-plugin-root-redirect.${format}.js`,
             formats: ['es', 'umd'],
         },
         rollupOptions: {

@@ -1,13 +1,13 @@
 {
-  "name": "@netglade/vite-shadow-dom",
+  "name": "@netglade/vite-plugin-root-redirect",
   "version": "0.0.0",
-  "description": "Vite plugin for Shadow DOM",
+  "description": "Vite plugin for redirecting root requests to a different path",
   "author": "NetGlade s.r.o.",
   "license": "MIT",
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git@github.com:netglade/vite-shadow-dom.git"
+    "url": "git@github.com:netglade/vite-plugin-root-redirect.git"
   },
   "scripts": {
     "dev": "vite",
@@ -25,10 +25,9 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vite-shadow-dom.umd.js",
-  "module": "./dist/vite-shadow-dom.es.js",
+  "main": "./dist/vite-plugin-root-redirect.umd.js",
+  "module": "./dist/vite-plugin-root-redirect.es.js",
   "types": "./dist/index.d.ts",
-  "bin": "./bin/index.js",
   "//": {},
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.0",
@@ -43,9 +42,5 @@
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.4",
     "vite-tsconfig-paths": "^4.2.1"
-  },
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "commander": "^11.0.0"
   }
 }
