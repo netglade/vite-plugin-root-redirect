@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { shadowDom } from '../../src/shadowDom'
+// import { rootRedirect } from '../../src/rootRedirect'
 import path from 'path'
 import Inspect from 'vite-plugin-inspect'
 
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    shadowDom({ logging: true }),
+    // rootRedirect(''),
     Inspect(),
   ],
 })
