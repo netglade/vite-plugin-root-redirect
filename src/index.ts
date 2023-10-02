@@ -1,4 +1,3 @@
-import { cliMain } from "./bin";
-import { Func } from "./func";
+import { rootRedirect } from "./rootRedirect";
 
-export { Func, cliMain };
+export { rootRedirect };
