@@ -1,6 +1,7 @@
 # vite-plugin-root-redirect
 
 **Redirect Vite's development server root to custom URL**
+
 Useful for projects with nested or multiple entry points.
 
 ## Installation
