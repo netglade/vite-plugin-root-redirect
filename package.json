@@ -37,5 +37,8 @@
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.4",
     "vite-tsconfig-paths": "^4.2.1"
-  }
+  },
+  "keywords": [
+    "vite-plugin"
+  ]
 }

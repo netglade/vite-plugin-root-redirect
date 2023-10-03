@@ -1,12 +1,7 @@
-<h1 align="center">vite-plugin-root-redirect</h1>
+# vite-plugin-root-redirect
 
-<p align="center">
-<b>Redirect Vite's development server root to custom URL</b>
-<br>
+**Redirect Vite's development server root to custom URL**
 Useful for projects with nested or multiple entry points.
-</p>
-![GitHub Repo stars](https://img.shields.io/github/stars/netglade/vite-plugin-root-redirect)
-![npm](https://img.shields.io/npm/dm/netglade/vite-plugin-root-redirect)
 
 ## Installation
 
