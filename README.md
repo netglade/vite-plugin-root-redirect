@@ -90,7 +90,7 @@ Some developers don't like to auto-open the browser when running Vite and want t
 
 ## Possible improvements
 
-- [ ] Only require relative path in URL and read the server host name and port dynamically from Vite config, e.g. `/src/views/Dashboard/index.html`. This would add support for when the port is already in use and the next one is taken instead.
+- Only require relative path in URL and read the server host name and port dynamically from Vite config, e.g. `/src/views/Dashboard/index.html`. This would add support for when the port is already in use and the next one is taken instead.
 
 ## License
 
