@@ -6,7 +6,7 @@ type rootRedirectOptions = {
 
 export const rootRedirect = (options: rootRedirectOptions): PluginOption => {
   return {
-    name: 'root-redirect',
+    name: 'vite-plugin-root-redirect',
     apply: 'serve',
     configureServer(server: ViteDevServer): void {
       server.middlewares.use(async (req, res, next) => {

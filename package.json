@@ -1,10 +1,10 @@
 {
   "name": "@netglade/vite-plugin-root-redirect",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "Redirect Vite's development server root to custom URL",
   "author": "NetGlade s.r.o.",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git@github.com:netglade/vite-plugin-root-redirect.git"
@@ -23,9 +23,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vite-plugin-root-redirect.umd.js",
+  "main": "./dist/vite-plugin-root-redirect.es.js",
   "module": "./dist/vite-plugin-root-redirect.es.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/vite-plugin-root-redirect.es.js"
+  },
   "//": {},
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.0",

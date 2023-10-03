@@ -1,8 +1,12 @@
-# vite-plugin-root-redirect
+<br/>
 
-**Redirect Vite's development server root to custom URL**
+<h1 align='center'>vite-plugin-root-redirect</h1>
 
-Useful for projects with nested or multiple entry points.
+<p align='center'><b>Redirect Vite's development server root to custom URL</b></p>
+
+<p align='center'>Useful for projects with nested or multiple entry points.</p>
+
+<br/>
 
 ## Installation
 
@@ -83,6 +87,10 @@ VITE v4.4.9  ready in 767 ms
 - The [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) has its custom extension config for which URL it will start.
 
 Some developers don't like to auto-open the browser when running Vite and want to open the app manually, this way their browser doesn't have to remember a URL specific to their project. This also helps when working with multiple projects.
+
+## Possible improvements
+
+- [ ] Only require relative path in URL and read the server host name and port dynamically from Vite config, e.g. `/src/views/Dashboard/index.html`. This would add support for when the port is already in use and the next one is taken instead.
 
 ## License
 

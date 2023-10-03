@@ -18,7 +18,7 @@ export default defineConfig({
             name: '@netglade/vite-plugin-root-redirect',
             // the proper extensions will be added
             fileName: (format) => `vite-plugin-root-redirect.${format}.js`,
-            formats: ['es', 'umd'],
+            formats: ['es'],
         },
         rollupOptions: {
             external: [...builtinModules, ...builtinModules.map((m) => `node:${m}`)],
