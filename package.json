@@ -1,6 +1,6 @@
 {
   "name": "@netglade/vite-plugin-root-redirect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Redirect Vite's development server root to custom URL",
   "author": "NetGlade s.r.o.",
   "license": "MIT",
