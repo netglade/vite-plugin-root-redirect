@@ -15,7 +15,9 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    rootRedirect('http://localhost:5173/src/views/App/index.html'),
+    rootRedirect({
+      url: 'http://localhost:5173/src/views/App/index.html'
+    }),
     Inspect(),
   ],
 })

@@ -1,13 +1,17 @@
 import { PluginOption, ViteDevServer } from 'vite'
 
-export const rootRedirect = (url: string): PluginOption => {
+type rootRedirectOptions = {
+  url: string
+}
+
+export const rootRedirect = (options: rootRedirectOptions): PluginOption => {
   return {
     name: 'root-redirect',
     apply: 'serve',
     configureServer(server: ViteDevServer): void {
       server.middlewares.use(async (req, res, next) => {
         if (req.url === '/') {
-          res.writeHead(301, { Location: url })
+          res.writeHead(301, { Location: options.url })
           res.end()
           return
         }
