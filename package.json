@@ -1,6 +1,6 @@
 {
   "name": "@netglade/vite-plugin-root-redirect",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Vite plugin for redirecting root requests to a different path",
   "author": "NetGlade s.r.o.",
   "license": "MIT",

@@ -55,7 +55,7 @@ export default defineConfig({
 
 Plugin options:
 
-```json
+```typescript
 {
   // `url` - the URL that Vite's root will redirect to
   url: string
