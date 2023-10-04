@@ -17,11 +17,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vite-plugin-root-redirect.es.js",
-  "module": "./dist/vite-plugin-root-redirect.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/vite-plugin-root-redirect.umd.js",
+  "module": "./dist/esm/vite-plugin-root-redirect.es.js",
+  "types": "./dist/esm/index.d.ts",
   "exports": {
-    "import": "./dist/vite-plugin-root-redirect.es.js"
+    "import": "./dist/esm/vite-plugin-root-redirect.es.js",
+    "require": "./dist/cjs/vite-plugin-root-redirect.umd.js",
+    "types": "./dist/esm/index.d.ts"
   },
   "//": {},
   "devDependencies": {

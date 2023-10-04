@@ -9,14 +9,12 @@ export default defineConfig({
     plugins: [
       tsconfigPaths(),
       dts({
-        outDir: tsconfig.compilerOptions.outDir,
         // tsconfigPath: '',
         rollupTypes: true,
       }),
     ],
     build: {
         target: tsconfig.compilerOptions.target,
-        outDir: tsconfig.compilerOptions.outDir,
         lib: {
             // Could also be a dictionary or array of multiple entry points
             entry: resolve(__dirname, 'src', 'index.ts'),
@@ -27,6 +25,7 @@ export default defineConfig({
         },
         rollupOptions: {
             external: [...builtinModules, ...builtinModules.map((m) => `node:${m}`)],
-        }
+        },
+      emptyOutDir: false,
     },
 })
