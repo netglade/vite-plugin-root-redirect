@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 vite-plugin-root-redirect.tgz
+tsconfig.json
