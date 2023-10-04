@@ -1,40 +1,41 @@
 {
   "name": "@netglade/vite-plugin-root-redirect",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "description": "Redirect Vite's development server root to custom URL",
   "author": "NetGlade s.r.o.",
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git@github.com:netglade/vite-plugin-root-redirect.git"
+    "url": "git+ssh://git@github.com/netglade/vite-plugin-root-redirect.git"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "build-test-package": "npm run build --workspace=sample-project",
-    "dev-test-package": "npm run dev --workspace=sample-project"
+    "build": "node scripts/build.js",
+    "simple-build": "cross-env MODULE=esm vite build",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "run-publish": "npm i && npm run build && npm publish"
   },
-  "workspaces": [
-    "packages/sample-project",
-    "."
-  ],
   "files": [
     "dist"
   ],
-  "main": "./dist/vite-plugin-root-redirect.es.js",
-  "module": "./dist/vite-plugin-root-redirect.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/vite-plugin-root-redirect.umd.js",
+  "module": "./dist/esm/vite-plugin-root-redirect.es.js",
+  "types": "./dist/esm/index.d.ts",
   "exports": {
-    "import": "./dist/vite-plugin-root-redirect.es.js"
+    "import": "./dist/esm/vite-plugin-root-redirect.es.js",
+    "require": "./dist/cjs/vite-plugin-root-redirect.umd.js",
+    "types": "./dist/esm/index.d.ts"
   },
   "//": {},
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.0",
     "@types/fs-extra": "^11.0.2",
+    "@types/jest": "^29.5.5",
     "@types/node": "^20.6.5",
+    "cross-env": "^7.0.3",
     "fs-extra": "^11.1.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",

@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-vite-plugin-root-redirect.tgz
+package-lock.json
