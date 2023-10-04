@@ -22,6 +22,7 @@ const cwdAndInstallTestProject = (name: string) => {
   if (fs.existsSync('node_modules')) {
     fs.rmSync('node_modules', { recursive: true, force: true })
   }
+  execSync('npm i -D ../../vite-plugin-root-redirect.tgz', { stdio: 'inherit' })
   execSync('npm install', { stdio: 'inherit' })
 
   console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\nTesting setup end.  Now running test.')

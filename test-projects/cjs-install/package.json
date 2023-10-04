@@ -8,7 +8,7 @@
   },
   "author": "Ondřej Műller",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@netglade/vite-plugin-root-redirect": "file:../../vite-plugin-root-redirect.tgz"
   }
 }
