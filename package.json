@@ -10,17 +10,10 @@
     "url": "git@github.com:netglade/vite-plugin-root-redirect.git"
   },
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "build-test-package": "npm run build --workspace=sample-project",
-    "dev-test-package": "npm run dev --workspace=sample-project"
+    "publish": "npm i && npm run build && npm publish"
   },
-  "workspaces": [
-    "packages/sample-project",
-    "."
-  ],
   "files": [
     "dist"
   ],

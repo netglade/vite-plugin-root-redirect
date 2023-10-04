@@ -1,0 +1,14 @@
+{
+  "name": "cjs-install",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Ondřej Műller",
+  "license": "ISC",
+  "dependencies": {
+    "@netglade/vite-plugin-root-redirect": "file:../../vite-plugin-root-redirect.tgz"
+  }
+}
