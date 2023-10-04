@@ -7,11 +7,7 @@ import fs from "fs";
 
 // NOTE: Build ESM
 {
-    if (fs.existsSync("tsconfig.json")) {
-        fs.unlinkSync("tsconfig.json")
-    }
-    fs.copyFileSync("tsconfig.esm.json", "tsconfig.json")
-    execSync("vite build", {stdio: "inherit"})
+    execSync("cross-env MODULE=esm vite build", {stdio: "inherit"})
     fs.mkdirSync('dist/esm', {recursive: true})
     for (const fileName of fs.readdirSync("dist")) {
         const filePath = `dist/${fileName}`
@@ -26,11 +22,7 @@ import fs from "fs";
 
 // NOTE: Build CJS
 {
-    if (fs.existsSync("tsconfig.json")) {
-        fs.unlinkSync("tsconfig.json")
-    }
-    fs.copyFileSync("tsconfig.cjs.json", "tsconfig.json")
-    execSync("vite build", {stdio: "inherit"})
+    execSync("cross-env MODULE=cjs vite build", {stdio: "inherit"})
     fs.mkdirSync('dist/cjs', {recursive: true})
     for (const fileName of fs.readdirSync("dist")) {
         const filePath = `dist/${fileName}`
